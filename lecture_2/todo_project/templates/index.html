@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block page_body %}
+
+<p>this is the homepage of our website.</p>
+
+<p>the time right now is {{ cur_date }}</p>
+
+these are tasks we have :
+<ul>
+    {% for task in tasks %}
+    <li> {{ task }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
+
+{% block title %}index{% endblock %}
